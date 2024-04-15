@@ -6,7 +6,7 @@ export const getOpenAIClient = async (command: Command): Promise<OpenAI> => {
   ux.action.start("Establishing connection to the OpenAI server");
   if (!getConfig("OPENAI_KEY")) {
     command.error(
-      "No OpenAI API Key configured for chroma server, please set CHROMA_SERVER_OPENAI_KEY in env or run `chromadb condigure`",
+      "No OpenAI API Key configured for chroma server, please set CHROMA_SERVER_OPENAI_KEY in env or run `chromadb configure`",
     );
   }
 

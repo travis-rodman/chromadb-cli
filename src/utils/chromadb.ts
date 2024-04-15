@@ -8,13 +8,13 @@ export const getChromaClient = async (
   ux.action.start("Establishing connection to the Chroma server");
   if (!getConfig("HOST")) {
     command.error(
-      "No host configured for chroma server, please set CHROMA_SERVER_HOST in env or run `chromadb condigure`",
+      "No host configured for chroma server, please set CHROMA_SERVER_HOST in env or run `chromadb configure`",
     );
   }
 
   if (!getConfig("PORT")) {
     command.error(
-      "No port configured for chroma server, please set CHROMA_SERVER_PORT in env or run `chromadb condigure`",
+      "No port configured for chroma server, please set CHROMA_SERVER_PORT in env or run `chromadb configure`",
     );
   }
 
